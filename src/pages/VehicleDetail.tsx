@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight, Share2, MapPin, Phone, Calendar, Mail, User, X } from "lucide-react";
 import { fetchCars, transformApiCarToVehicle, type Vehicle, CONTACT_FORM_API_URL, PROFILE_ID } from "@/services/carsApi";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,6 +29,8 @@ const VehicleDetail = () => {
   }>();
   const navigate = useNavigate();
   const { toast: toastHook } = useToast();
+  const { getPhoneNumber, getAddress } = useLanguage();
+  const address = getAddress();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAppointmentModalOpen, setIsAppointmentModalOpen] = useState(false);
   const [isReservationModalOpen, setIsReservationModalOpen] = useState(false);
@@ -565,7 +568,7 @@ const VehicleDetail = () => {
             {/* Action Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
               <Button variant="outline" className="flex items-center gap-2" asChild>
-                <a href="tel:690715080">
+                <a href={`tel:${getPhoneNumber()}`}>
                   <Phone className="w-4 h-4" />
                   Llamar ahora
                 </a>
@@ -837,9 +840,9 @@ const VehicleDetail = () => {
               <h3 className="text-lg font-semibold">2.1 Responsable del Tratamiento de Datos</h3>
               <div className="bg-muted/50 p-4 rounded-lg">
                 <p><strong>Nombre de la empresa:</strong> INFINIT Cars</p>
-                <p><strong>Dirección:</strong> Calle Río Tormes, nº 83, 28110, Algete</p>
+                <p><strong>Dirección:</strong> {address.full}</p>
                 <p><strong>Correo electrónico:</strong> contact@infinit.com</p>
-                <p><strong>Teléfono:</strong> 690715080</p>
+                <p><strong>Teléfono:</strong> {getPhoneNumber()}</p>
               </div>
               
               <h3 className="text-lg font-semibold">2.2 Datos que Recopilamos</h3>

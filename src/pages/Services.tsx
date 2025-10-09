@@ -1,6 +1,7 @@
 import { Car, Shield, CreditCard, Truck, HeadphonesIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
@@ -8,6 +9,8 @@ import heroImage from "@/assets/servicios-hero.png";
 import servicios2Image from "@/assets/servicios-2.png";
 
 const Services = () => {
+  const { getCityName } = useLanguage();
+  const cityName = getCityName();
   const mainServices = [
     {
       icon: Car,
@@ -44,7 +47,7 @@ const Services = () => {
                 Servicios en INFINIT Cars
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Comercializamos e importamos vehículos premium a la carta, de ocasión, seminuevos y de KM 0 en Madrid.
+                Comercializamos e importamos vehículos premium a la carta, de ocasión, seminuevos y de KM 0 en {cityName}.
               </p>
             </div>
             <div className="flex justify-center">

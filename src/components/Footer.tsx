@@ -6,10 +6,15 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { useLanguage } from "@/contexts/LanguageContext";
 import infinitCarsLogo from "@/assets/infinit-cars-logo.png";
+import LanguageSelector from "./LanguageSelector";
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState<string | null>(null);
+  const { getPhoneNumber, getAddress, getCityName } = useLanguage();
+  const address = getAddress();
+  const cityName = getCityName();
 
   const legalContent = {
     privacy: {
@@ -19,9 +24,9 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">2.1 Responsable del Tratamiento de Datos</h3>
           <div className="bg-muted/50 p-4 rounded-lg">
             <p><strong>Nombre de la empresa:</strong> INFINIT Cars</p>
-            <p><strong>Dirección:</strong> Calle Río Tormes, nº 83, 28110, Algete</p>
+            <p><strong>Dirección:</strong> {address.full}</p>
             <p><strong>Correo electrónico:</strong> contact@infinit.com</p>
-            <p><strong>Teléfono:</strong> 690715080</p>
+            <p><strong>Teléfono:</strong> {getPhoneNumber()}</p>
           </div>
           
           <h3 className="text-lg font-semibold">2.2 Datos que Recopilamos</h3>
@@ -56,8 +61,8 @@ const Footer = () => {
           <div className="bg-muted/50 p-4 rounded-lg">
             <p><strong>Titular:</strong> INFINIT Cars</p>
             <p><strong>CIF/NIF:</strong> B44976579</p>
-            <p><strong>Domicilio social:</strong> Calle Río Tormes, nº 83, 28110, Algete</p>
-            <p><strong>Teléfono:</strong> 690715080</p>
+            <p><strong>Domicilio social:</strong> {address.full}</p>
+            <p><strong>Teléfono:</strong> {getPhoneNumber()}</p>
             <p><strong>Correo electrónico:</strong> contact@infinit.com</p>
           </div>
           
@@ -76,7 +81,7 @@ const Footer = () => {
           <p>No nos hacemos responsables del uso indebido del sitio web ni de los enlaces de terceros que puedan aparecer en él.</p>
           
           <h3 className="text-lg font-semibold">1.5 Legislación y Jurisdicción</h3>
-          <p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los tribunales de Madrid.</p>
+          <p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los tribunales de {cityName}.</p>
         </div>
       )
     },
@@ -109,7 +114,7 @@ const Footer = () => {
           <p>El usuario podrá ejercer su derecho de desistimiento dentro de los 14 días posteriores a la compra, conforme a la normativa vigente.</p>
           
           <h3 className="text-lg font-semibold">4.6 Legislación Aplicable y Jurisdicción</h3>
-          <p>Estos términos se rigen por la legislación española. Cualquier disputa será resuelta en los tribunales de Madrid.</p>
+          <p>Estos términos se rigen por la legislación española. Cualquier disputa será resuelta en los tribunales de {cityName}.</p>
         </div>
       )
     },
@@ -150,8 +155,9 @@ const Footer = () => {
               <span className="text-xl font-bold">INFINIT Cars</span>
             </div>
             <p className="text-nav-muted mb-4">
-              Tu concesionario de confianza para vehículos premium de ocasión en Madrid.
+              Tu concesionario de confianza para vehículos premium de ocasión en {cityName}.
             </p>
+            <LanguageSelector />
           </div>
 
           {/* Contact */}
@@ -160,15 +166,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary" />
-                <span className="text-nav-muted">690715080</span>
+                <span className="text-nav-muted">{getPhoneNumber()}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} className="text-primary" />
                 <span className="text-nav-muted">contact@infinit.com</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <MapPin size={16} className="text-primary" />
-                <span className="text-nav-muted">Calle Rio Tormes, 83, 28110 Algete, Madrid</span>
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-nav-muted">{address.full}</span>
               </div>
             </div>
           </div>
@@ -210,31 +216,31 @@ const Footer = () => {
             <p className="text-nav-muted">
               © 2025 INFINIT Cars. Powered by <a href="https://infinit.com/" target="_blank" rel="noopener noreferrer" className="underline">INFINIT</a>
             </p>
-            
+
             {/* Legal Links */}
             <div className="flex flex-wrap gap-4 text-sm text-nav-muted">
-              <button 
+              <button
                 onClick={() => setOpenModal('legal')}
                 className="hover:text-primary transition-colors"
               >
                 Aviso Legal
               </button>
               <span>•</span>
-              <button 
+              <button
                 onClick={() => setOpenModal('privacy')}
                 className="hover:text-primary transition-colors"
               >
                 Política de Privacidad
               </button>
               <span>•</span>
-              <button 
+              <button
                 onClick={() => setOpenModal('terms')}
                 className="hover:text-primary transition-colors"
               >
                 Términos y Condiciones
               </button>
               <span>•</span>
-              <button 
+              <button
                 onClick={() => setOpenModal('cookies')}
                 className="hover:text-primary transition-colors"
               >

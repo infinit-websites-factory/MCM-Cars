@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -21,6 +22,8 @@ import { CONTACT_FORM_API_URL, PROFILE_ID, fetchCars, transformApiCarToVehicle, 
 
 const Financing = () => {
   const { toast } = useToast();
+  const { getPhoneNumber, getAddress } = useLanguage();
+  const address = getAddress();
   const [currentStep, setCurrentStep] = useState(1);
   const [openPrivacyModal, setOpenPrivacyModal] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -1166,9 +1169,9 @@ Gastos hipoteca/alquiler mensual: ${formData.gastosHipotecaAlquiler || 'No espec
               <h3 className="text-lg font-semibold">2.1 Responsable del Tratamiento de Datos</h3>
               <div className="bg-muted/50 p-4 rounded-lg">
                 <p><strong>Nombre de la empresa:</strong> INFINIT Cars</p>
-                <p><strong>Dirección:</strong> Calle Río Tormes, nº 83, 28110, Algete</p>
+                <p><strong>Dirección:</strong> {address.full}</p>
                 <p><strong>Correo electrónico:</strong> contact@infinit.com</p>
-                <p><strong>Teléfono:</strong> 690715080</p>
+                <p><strong>Teléfono:</strong> {getPhoneNumber()}</p>
               </div>
 
               <h3 className="text-lg font-semibold">2.2 Datos que Recopilamos</h3>

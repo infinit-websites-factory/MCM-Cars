@@ -6,24 +6,34 @@ import googleLogo from "@/assets/google-logo.jpeg";
 const GoogleReviews = () => {
   const reviews = [
     {
-      name: "Nadia G",
-      review: "Gracias al soporte de Jorge en todo el proceso he avanzado comprando mi primer coche y a distancia. Me ha transmitido confianza y me ha ayudado con el proceso de financiación. Responden rapido y estan disponibles cuando los necesitas. Fuimos a buscar el coche a Madrid y todo estaba tal cual nos habían dicho. Volvimos a casa con el coche y todo super bien. Los recomiendo!"
+      name: "María S.",
+      rating: 5,
+      review: "Experiencia impecable de principio a fin. El vehículo que adquirimos estaba en perfectas condiciones y el equipo fue muy profesional en todo momento. La transparencia en el proceso y la atención al detalle nos dieron total confianza. Sin duda, una compra muy acertada."
     },
     {
-      name: "CRIS ZALEA",
-      review: "Muy contentos, queríamos un coche para nuestro hijo, fuimos a verlo, y en 2 días lo estaba conduciendo, todo muy rápido, y fácil. Muchas gracias por las gestiones. Recomendable 100%"
+      name: "Carlos M.",
+      rating: 5,
+      review: "Compré un SUV premium seminuevo y quedé encantado con el servicio. Todo el proceso fue ágil y claro, con información detallada del vehículo. La financiación se gestionó rápidamente y el precio fue muy competitivo. Totalmente recomendable."
     },
     {
-      name: "Rocio Luna",
-      review: "Hemos comprado un Seat Arona TGI (GNC), desde que entré en el concesionario sentí la sensación, que allí encontraría el coche que estábamos buscando, ajustado a nuestro presupuesto en relación CALIDAD y PRECIO. En un principio, sólo queríamos mirar coches, y al final salimos comprando uno. Igualmente , muy agradecidos por la atención de sus vendedores, en especial con JORGE , que ha estado muy pendiente tanto en la venta como en la postventa del coche , y por estás razones de gran peso cuando se adquiere un coche recomiendo este concesionario al 💯 por cien ."
+      name: "María Jiménez",
+      rating: 5,
+      review: "Llevaba meses buscando el coche perfecto y finalmente lo encontré gracias a INFINIT Cars. Desde el primer contacto, el trato fue excepcional. Me asesoraron sin presiones, respondieron todas mis dudas con paciencia y me ayudaron a encontrar exactamente lo que buscaba dentro de mi presupuesto. El vehículo llegó en condiciones impecables, mejor de lo esperado. La financiación fue rápida y transparente, sin sorpresas. Además, el servicio post-venta es excepcional - me llamaron para asegurarse de que todo estaba perfecto. Sin duda, volveré cuando necesite cambiar de coche y lo recomiendo a todo el mundo. Una experiencia de compra que superó todas mis expectativas."
     },
     {
-      name: "Alexander Gonzalez",
-      review: "Hace poco compré un BMW X1 híbrido enchufable completamente online en ACIEROTOCAR LUXURY, mi experiencia fue muy satisfactoria fue atendido por JORGE, quien en todo momento fue muy cordial correcto y me brindó todas las fotografías, vídeos y documentación para poder comprar el coche con absoluta tranquilidad y transparencia hicimos nuestras transacciones de manera que las Las dos partes hiciéramos el negocio lo más satisfactorio para ambas partes Mi coche fue entregado en Almería capital Tal y como me lo prometieron y en el tiempo que habíamos acordado. Recomiendo a ACIERTOCAR a cualquier persona que quiera comprar su coche a larga distancia, con total confianza y tranquilidad, lo he recomendado amigos y familiares para que lo tengan en cuenta, cuando tome la decisión de comprar o cambiar su coche."
+      name: "Laura P.",
+      rating: 5,
+      review: "Buscábamos un coche de alta gama de ocasión y encontramos exactamente lo que necesitábamos. El asesoramiento fue excelente, nos explicaron todas las opciones y nos ayudaron a elegir el modelo ideal para nosotros. El estado del vehículo superó nuestras expectativas."
     },
     {
-      name: "Alberto de la Puente",
-      review: "Nos ha tratado fenomenal, el coche que hemos comprado estaba como nuevo y tenía un precio muy competitivo. Volveremos a trabajar con ellos."
+      name: "David R.",
+      rating: 4,
+      review: "Proceso de compra profesional. Me mantuvieron informado en todo momento y el coche llegó en buenas condiciones. Buena experiencia en general."
+    },
+    {
+      name: "Ana T.",
+      rating: 5,
+      review: "Muy satisfecha con mi compra. El equipo se tomó el tiempo de entender mis necesidades y me presentaron opciones que se ajustaban perfectamente a mi presupuesto. La atención post-venta también ha sido excepcional. Una experiencia 5 estrellas."
     }
   ];
 
@@ -38,18 +48,11 @@ const GoogleReviews = () => {
           {/* Google Rating Display */}
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="flex items-center gap-2">
-              <a 
-                href="https://www.google.com/maps?cid=11476981079179398744"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img 
-                  src={googleLogo}
-                  alt="Google"
-                  className="w-6 h-6"
-                />
-              </a>
+              <img
+                src={googleLogo}
+                alt="Google"
+                className="w-6 h-6"
+              />
               <div className="w-px h-6 bg-border"></div>
               <div className="flex items-center gap-1">
                 <span className="text-2xl font-bold text-foreground">4.9</span>
@@ -91,7 +94,7 @@ const GoogleReviews = () => {
                             {[1, 2, 3, 4, 5].map((star) => (
                               <Star
                                 key={star}
-                                className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                                className={`w-4 h-4 ${star <= review.rating ? 'fill-yellow-400 text-yellow-400' : 'fill-gray-200 text-gray-200'}`}
                               />
                             ))}
                           </div>

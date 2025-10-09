@@ -12,6 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
@@ -21,6 +22,8 @@ import { CONTACT_FORM_API_URL, PROFILE_ID } from "@/services/carsApi";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { getPhoneNumber, getAddress } = useLanguage();
+  const address = getAddress();
   const [openPrivacyModal, setOpenPrivacyModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -89,13 +92,15 @@ const Contact = () => {
     });
   };
 
+  const phoneNumber = getPhoneNumber();
+
   const contactInfo = [
     {
       icon: Phone,
       title: "Llámanos",
       description: "Estamos disponible en el siguiente teléfono:",
-      contact: "690715080",
-      href: "tel:690715080"
+      contact: phoneNumber,
+      href: `tel:${phoneNumber}`
     },
     {
       icon: Mail,
@@ -107,9 +112,9 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Ven a visitarnos",
-      description: "Encuéntranos en Calle Rio Tormes, 83, 28110 Algete, Madrid",
-      contact: "Calle Rio Tormes, 83, 28110 Algete, Madrid",
-      href: "https://www.google.com/maps/place//data=!4m2!3m1!1s0xd43ccc764e50acb:0x9f466d7bde5e0e58?sa=X&ved=1t:8290&ictx=111"
+      description: `Encuéntranos en ${address.full}`,
+      contact: address.full,
+      href: address.mapsUrl
     }
   ];
 
@@ -342,9 +347,8 @@ const Contact = () => {
                       Dirección
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Calle Rio Tormes, 83<br />
-                      28110 Algete, Madrid<br />
-                      España
+                      {address.street}<br />
+                      {address.city}
                     </p>
                   </div>
                 </div>
@@ -369,14 +373,14 @@ const Contact = () => {
             <div className="w-full">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12149.207471547842!2d-3.4993847!3d40.5969394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43ccc764e50acb%3A0x9f466d7bde5e0e58!2sAcierto%20Cars!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses"
+                  src={address.mapsEmbedUrl}
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación de INFINIT Cars en Algete, Madrid"
+                  title={`Ubicación de INFINIT Cars en ${address.city}`}
                 ></iframe>
               </div>
             </div>
@@ -399,9 +403,9 @@ const Contact = () => {
               <h3 className="text-lg font-semibold">2.1 Responsable del Tratamiento de Datos</h3>
               <div className="bg-muted/50 p-4 rounded-lg">
                 <p><strong>Nombre de la empresa:</strong> INFINIT Cars</p>
-                <p><strong>Dirección:</strong> Calle Río Tormes, nº 83, 28110, Algete</p>
+                <p><strong>Dirección:</strong> {address.full}</p>
                 <p><strong>Correo electrónico:</strong> contact@infinit.com</p>
-                <p><strong>Teléfono:</strong> 690715080</p>
+                <p><strong>Teléfono:</strong> {getPhoneNumber()}</p>
               </div>
               
               <h3 className="text-lg font-semibold">2.2 Datos que Recopilamos</h3>

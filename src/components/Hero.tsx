@@ -4,10 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  const { getCityName } = useLanguage();
+  const cityName = getCityName();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +35,7 @@ const Hero = () => {
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Vehículos de Alta Gama
-          <span className="block text-primary"> en Madrid</span>
+          <span className="block text-primary"> en {cityName}</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
           Somos referentes en la comercialización e importación de vehículos premium de ocasión, seminuevos y Km0.

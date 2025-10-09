@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import infinitCarsLogo from "@/assets/infinit-cars-logo.png";
 
 const Header = () => {
+  const { getPhoneNumber } = useLanguage();
+
   return (
     <header className="bg-nav-background text-nav-foreground border-b border-border/10">
       <div className="max-w-6xl mx-auto px-4 py-4">
@@ -40,7 +43,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <Button variant="premium" className="hidden md:flex items-center gap-2" asChild>
-            <a href="tel:690715080">
+            <a href={`tel:${getPhoneNumber()}`}>
               <Phone size={16} />
               Llama ahora
             </a>
