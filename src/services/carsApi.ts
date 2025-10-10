@@ -93,7 +93,7 @@ const getProfileIdFromSubdomain = (): string => {
 export const PROFILE_ID = getProfileIdFromSubdomain();
 
 // API endpoints using the dynamic profile ID
-const API_BASE_URL = 'https://multipost-api.alx.test-cluster.alx.tech';
+const API_BASE_URL = 'https://multipost-public.alx.test-cluster.alx.tech';
 const API_URL = `${API_BASE_URL}/api/public/inventory/profiles/${PROFILE_ID}`;
 export const CONTACT_FORM_API_URL = `${API_BASE_URL}/api/interactions/contact-form`;
 
