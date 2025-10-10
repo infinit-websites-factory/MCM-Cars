@@ -77,13 +77,24 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     // Get language from localStorage or default to Spanish
-    const savedLanguage = localStorage.getItem("language") as Language;
-    return savedLanguage || "es";
+    try {
+      const savedLanguage = localStorage.getItem("language") as Language;
+      return savedLanguage || "es";
+    } catch (error) {
+      console.warn("localStorage not available:", error);
+      return "es";
+    }
   });
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem("language", lang);
+    try {
+      localStorage.setItem("language", lang);
+      // Reload the page to ensure all translations are updated
+      window.location.reload();
+    } catch (error) {
+      console.warn("Failed to save language preference:", error);
+    }
   };
 
   const getPhoneNumber = () => {
