@@ -781,5 +781,8 @@
       "reservation_error": "There was a problem sending the reservation. Please try again.",
       "contact_error": "There was a problem sending the enquiry. Please try again."
     }
+  },
+  "vehicle_status": {
+    "reserved": "RESERVED"
   }
 }

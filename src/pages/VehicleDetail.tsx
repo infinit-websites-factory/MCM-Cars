@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import ReservedBanner from "@/components/ReservedBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
@@ -344,6 +345,7 @@ const VehicleDetail = () => {
           {/* Image Gallery */}
           <div className="lg:col-span-2 space-y-4">
             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted group">
+              {vehicle.status === 'Reserved' && <ReservedBanner size="large" />}
               <img src={vehicle.images[currentImageIndex]} alt={`${vehicle.brand} ${vehicle.model}`} className="w-full h-full object-cover" />
               
               {vehicle.images.length > 1 && <>
@@ -453,6 +455,7 @@ const VehicleDetail = () => {
             </div>
 
             {/* Reserve Button */}
+            {vehicle.status !== 'Reserved' && (
             <Card className="bg-primary text-primary-foreground">
               <CardContent className="p-4">
                 <div className="flex items-center gap-2 mb-2">
@@ -568,6 +571,7 @@ const VehicleDetail = () => {
                 </Dialog>
               </CardContent>
             </Card>
+            )}
 
             {/* Action Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">

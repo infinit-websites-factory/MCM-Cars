@@ -126,9 +126,15 @@ export const useVehicleFilters = (vehicles: Vehicle[]) => {
       return true;
     });
 
-    // Apply sorting
+    // Apply sorting with status priority (Published before Reserved)
     if (filters.sortBy) {
       filtered = [...filtered].sort((a, b) => {
+        // First, sort by status (Published vehicles first)
+        const statusOrder = (status: string) => status === 'Published' ? 0 : 1;
+        const statusDiff = statusOrder(a.status) - statusOrder(b.status);
+        if (statusDiff !== 0) return statusDiff;
+
+        // Then apply the selected sorting criteria
         switch (filters.sortBy) {
           case 'updated_desc':
             return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();

@@ -5,6 +5,7 @@ import { Eye, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import ReservedBanner from "@/components/ReservedBanner";
 import dgtB from "@/assets/dgt-b.png";
 import dgtC from "@/assets/dgt-c.png";
 import dgtCero from "@/assets/dgt-cero.png";
@@ -21,6 +22,7 @@ interface VehicleCardProps {
   fuel: string;
   transmission: string;
   type: string;
+  status: string;
   environmentalBadge?: string;
 }
 
@@ -35,6 +37,7 @@ const VehicleCard = ({
   fuel,
   transmission,
   type,
+  status,
   environmentalBadge
 }: VehicleCardProps) => {
   const { translateVehicleAttribute, formatPrice, t } = useLanguage();
@@ -92,8 +95,9 @@ const VehicleCard = ({
     <Link to={`/stock/${id}`} className="block h-full">
       <Card className="group overflow-hidden hover:shadow-luxury transition-all duration-300 hover:scale-[1.02] flex flex-col h-full cursor-pointer">
         <div className="relative overflow-hidden">
-        <img 
-          src={currentImage} 
+        {status === 'Reserved' && <ReservedBanner size="small" />}
+        <img
+          src={currentImage}
           alt={`${brand} ${model}`}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
           style={{ imageRendering: 'auto' }}

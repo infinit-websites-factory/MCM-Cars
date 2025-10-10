@@ -781,5 +781,8 @@
       "reservation_error": "Un problème est survenu lors de l'envoi de la réservation. Veuillez réessayer.",
       "contact_error": "Un problème est survenu lors de l'envoi de la demande. Veuillez réessayer."
     }
+  },
+  "vehicle_status": {
+    "reserved": "RÉSERVÉ"
   }
 }

@@ -781,5 +781,8 @@
       "reservation_error": "Hubo un problema al enviar la reserva. Por favor, inténtalo de nuevo.",
       "contact_error": "Hubo un problema al enviar la consulta. Por favor, inténtalo de nuevo."
     }
+  },
+  "vehicle_status": {
+    "reserved": "RESERVADO"
   }
 }

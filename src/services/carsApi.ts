@@ -43,6 +43,7 @@ export interface Vehicle {
   fuel: string;
   transmission: string;
   type: string;
+  status: string;
   color?: string;
   doors?: number;
   seats?: number;
@@ -133,6 +134,7 @@ export const transformApiCarToVehicle = (apiCar: CarApiResponse): Vehicle => {
     fuel: apiCar.fuel || 'Unknown',
     transmission: apiCar.transmission || 'Unknown',
     type: apiCar.body_type || 'Unknown',
+    status: apiCar.status || 'Published',
     color: apiCar.color,
     doors: apiCar.num_doors,
     seats: apiCar.num_seats,

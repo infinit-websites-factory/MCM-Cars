@@ -25,9 +25,17 @@ const VehicleGallery = () => {
     ? carsResponse.map(transformApiCarToVehicle)
     : [];
 
-  // Sort by most recent (createdAt) and take first 3
+  // Sort by status (Published first), then by most recent (createdAt), and take first 3
   const recentVehicles = [...vehicles]
-    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .sort((a, b) => {
+      // First, sort by status (Published vehicles first)
+      const statusOrder = (status: string) => status === 'Published' ? 0 : 1;
+      const statusDiff = statusOrder(a.status) - statusOrder(b.status);
+      if (statusDiff !== 0) return statusDiff;
+
+      // Then sort by most recent
+      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+    })
     .slice(0, 3);
 
   if (isError) {
