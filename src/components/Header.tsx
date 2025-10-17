@@ -71,16 +71,16 @@ const Header = () => {
                 <Menu size={24} />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-nav-background text-nav-foreground">
+            <SheetContent side="right" className="bg-white">
               <SheetHeader>
-                <SheetTitle className="text-nav-foreground text-left">Menu</SheetTitle>
+                <SheetTitle className="text-foreground text-left">Menu</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col space-y-6 mt-8">
                 {navigationLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-lg text-nav-foreground hover:text-primary transition-colors"
+                    className="text-lg text-foreground hover:text-primary transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
