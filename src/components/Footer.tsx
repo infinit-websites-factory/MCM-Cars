@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageCircle } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -160,15 +160,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">{t('footer.contact_title')}</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone size={16} className="text-white" />
+                <Phone size={16} className="text-primary" />
                 <span className="text-white/70">{getPhoneNumber()}</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail size={16} className="text-white" />
+                <Mail size={16} className="text-primary" />
                 <span className="text-white/70">contact@infinit.com</span>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin size={16} className="text-white flex-shrink-0 mt-0.5" />
+                <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">{address.full}</span>
               </div>
             </div>
@@ -187,20 +187,55 @@ const Footer = () => {
           </div>
 
           {/* Hours */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">{t('footer.hours_title')}</h3>
-            <div className="space-y-2 text-white/70">
-              <div className="flex items-center space-x-2">
-                <Clock size={16} className="text-white" />
-                <span>{t('footer.hours.weekday')}</span>
+          <div className="flex flex-col justify-between h-full">
+            <div>
+              <h3 className="text-lg font-semibold mb-4 text-white">{t('footer.hours_title')}</h3>
+              <div className="space-y-2 text-white/70">
+                <div className="flex items-center space-x-2">
+                  <Clock size={16} className="text-primary" />
+                  <span>{t('footer.hours.weekday')}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Clock size={16} className="text-primary" />
+                  <span>{t('footer.hours.saturday')}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Clock size={16} className="text-primary" />
+                  <span>{t('footer.hours.sunday')}</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <Clock size={16} className="text-white" />
-                <span>{t('footer.hours.saturday')}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Clock size={16} className="text-white" />
-                <span>{t('footer.hours.sunday')}</span>
+            </div>
+
+            {/* Social Media */}
+            <div className="mt-8">
+              <div className="flex items-center space-x-4">
+                <a
+                  href="https://www.facebook.com/infinitcars"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary/80 hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook size={24} />
+                </a>
+                <a
+                  href="https://www.instagram.com/infinit_cars"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary/80 hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={24} />
+                </a>
+                <a
+                  href="https://wa.me/1234567890?text=Hello%20INFINIT%20Cars"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary/80 hover:text-primary transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle size={24} />
+                </a>
               </div>
             </div>
           </div>
