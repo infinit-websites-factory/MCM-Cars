@@ -1,7 +1,7 @@
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import googleLogo from "@/assets/google-logo.jpeg";
+import googleLogo from "@/assets/google-logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 import { useMemo } from "react";
