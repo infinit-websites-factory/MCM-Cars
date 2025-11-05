@@ -9,6 +9,7 @@ interface Vehicle {
   year: number;
   price: number;
   mileage: number;
+  mileageUnit: string;
   fuel: string;
   transmission: string;
   images: string[];
@@ -27,7 +28,8 @@ async function fetchVehicleData(id: string): Promise<Vehicle | null> {
       return null;
     }
 
-    const cars = await response.json();
+    const carsResponse = await response.json();
+    const cars = carsResponse.items || carsResponse; // Support both new paginated format and old format
     const apiCar = cars.find((car: any) => car.id === id);
 
     if (!apiCar) {
@@ -64,6 +66,7 @@ async function fetchVehicleData(id: string): Promise<Vehicle | null> {
       year: registrationYear,
       price: apiCar.price_cents ? apiCar.price_cents / 100 : 0,
       mileage: apiCar.odometer?.value || 0,
+      mileageUnit: apiCar.odometer?.unit || 'km',
       fuel: fuelTranslations[apiCar.fuel] || apiCar.fuel || 'Desconocido',
       transmission: transmissionTranslations[apiCar.transmission] || apiCar.transmission || 'Desconocido',
       images: apiCar.photo_urls?.length > 0 ? apiCar.photo_urls : [],
@@ -109,7 +112,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       minimumFractionDigits: 0,
     }).format(vehicle.price || 0);
 
-    const mileageText = vehicle.mileage ? `${vehicle.mileage.toLocaleString('es-ES')} km` : 'Consultar';
+    const mileageText = vehicle.mileage ? `${vehicle.mileage.toLocaleString('es-ES')} ${vehicle.mileageUnit}` : 'Consultar';
 
     // Build title parts, filtering out undefined/empty values
     const titleParts = [vehicle.brand, vehicle.model, vehicle.year].filter(Boolean);

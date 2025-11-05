@@ -19,6 +19,7 @@ interface VehicleCardProps {
   year: number;
   price: number;
   mileage: number;
+  mileageUnit: string;
   fuel: string;
   transmission: string;
   type: string;
@@ -34,6 +35,7 @@ const VehicleCard = ({
   year,
   price,
   mileage,
+  mileageUnit,
   fuel,
   transmission,
   type,
@@ -158,7 +160,7 @@ const VehicleCard = ({
         <div className="mt-auto">
           <div className="flex items-end justify-between gap-4 mb-4">
             <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground flex-1">
-              <div>📏 {mileage.toLocaleString()}</div>
+              <div>📏 {mileage.toLocaleString()} {mileageUnit}</div>
               <div>⛽ {translateVehicleAttribute('fuel', fuel)}</div>
               <div>⚙️ {translateVehicleAttribute('transmission', transmission)}</div>
               <div>📅 {year}</div>

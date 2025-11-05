@@ -31,8 +31,10 @@ const Stock = () => {
   });
 
   const vehicles: Vehicle[] = carsResponse
-    ? carsResponse.map(transformApiCarToVehicle)
+    ? carsResponse.items.map(transformApiCarToVehicle)
     : [];
+
+  const totalVehicles = carsResponse?.total || 0;
 
   const {
     filters,
@@ -144,8 +146,15 @@ const Stock = () => {
                 {/* Results Count and Sort Controls */}
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-sm text-muted-foreground">
-                    {filteredVehicles.length} {filteredVehicles.length !== 1 ? t('stock_page.results_count_plural') : t('stock_page.results_count')}
-                    {(filters.searchTerm || filters.selectedBrand || filters.selectedBodyType || filters.selectedTransmission || filters.selectedFuel) && ' ' + t('stock_page.found')}
+                    {(filters.searchTerm || filters.selectedBrand || filters.selectedBodyType || filters.selectedTransmission || filters.selectedFuel) ? (
+                      <>
+                        {filteredVehicles.length} {filteredVehicles.length !== 1 ? t('stock_page.results_count_plural') : t('stock_page.results_count')} {t('stock_page.found')}
+                      </>
+                    ) : (
+                      <>
+                        {totalVehicles} {totalVehicles !== 1 ? t('stock_page.results_count_plural') : t('stock_page.results_count')}
+                      </>
+                    )}
                   </h2>
 
                   <div className="flex items-center gap-2">

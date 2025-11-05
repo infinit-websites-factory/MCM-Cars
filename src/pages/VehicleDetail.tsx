@@ -88,7 +88,7 @@ const VehicleDetail = () => {
     staleTime: 5 * 60 * 1000,
     retry: 2
   });
-  const vehicle: Vehicle | undefined = carsData ? transformApiCarToVehicle(carsData.find(car => car.id === id)!) : undefined;
+  const vehicle: Vehicle | undefined = carsData ? transformApiCarToVehicle(carsData.items.find(car => car.id === id)!) : undefined;
   useEffect(() => {
     if (!isLoading && !vehicle) {
       navigate('/stock');
@@ -332,7 +332,7 @@ const VehicleDetail = () => {
               <Badge variant="secondary">{vehicle.year}</Badge>
               <Badge variant="secondary">{translateVehicleAttribute('transmission', vehicle.transmission)}</Badge>
               <Badge variant="secondary">{translateVehicleAttribute('fuel', vehicle.fuel)}</Badge>
-              <Badge variant="secondary">{vehicle.mileage.toLocaleString()}</Badge>
+              <Badge variant="secondary">{vehicle.mileage.toLocaleString()} {vehicle.mileageUnit}</Badge>
             </div>
           </div>
           <Button variant="outline" size="sm" onClick={handleShare} className="flex items-center gap-2">
@@ -400,7 +400,7 @@ const VehicleDetail = () => {
                   </div>
                   <div>
                     <div className="text-muted-foreground mb-1">{t('vehicle_detail.specifications.mileage')}</div>
-                    <div className="font-semibold">{vehicle.mileage.toLocaleString()}</div>
+                    <div className="font-semibold">{vehicle.mileage.toLocaleString()} {vehicle.mileageUnit}</div>
                   </div>
                   <div>
                     <div className="text-muted-foreground mb-1">{t('vehicle_detail.specifications.fuel')}</div>

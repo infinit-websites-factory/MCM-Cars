@@ -30,6 +30,14 @@ export interface CarApiResponse {
   };
 }
 
+export interface PaginatedCarsApiResponse {
+  items: CarApiResponse[];
+  total: number;
+  page: number;
+  size: number;
+  pages: number;
+}
+
 export type CarsApiResponse = CarApiResponse[];
 
 export interface Vehicle {
@@ -40,6 +48,7 @@ export interface Vehicle {
   year: number;
   price: number;
   mileage: number;
+  mileageUnit: string;
   fuel: string;
   transmission: string;
   type: string;
@@ -98,7 +107,7 @@ const API_BASE_URL = 'https://multipost-public.alx.test-cluster.alx.tech';
 const API_URL = `${API_BASE_URL}/api/public/inventory/profiles/${PROFILE_ID}`;
 export const CONTACT_FORM_API_URL = `${API_BASE_URL}/api/interactions/contact-form`;
 
-export const fetchCars = async (): Promise<CarsApiResponse> => {
+export const fetchCars = async (): Promise<PaginatedCarsApiResponse> => {
   const response = await fetch(API_URL, {
     method: 'GET',
     headers: {
@@ -131,6 +140,7 @@ export const transformApiCarToVehicle = (apiCar: CarApiResponse): Vehicle => {
     year: registrationYear,
     price: apiCar.price_cents ? apiCar.price_cents / 100 : 0, // Convert from cents to euros
     mileage: apiCar.odometer?.value || 0,
+    mileageUnit: apiCar.odometer?.unit || 'km',
     fuel: apiCar.fuel || 'Unknown',
     transmission: apiCar.transmission || 'Unknown',
     type: apiCar.body_type || 'Unknown',
