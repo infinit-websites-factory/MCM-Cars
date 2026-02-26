@@ -10,7 +10,11 @@ import VehicleDetail from "./pages/VehicleDetail";
 import Sell from "./pages/Sell";
 import Financing from "./pages/Financing";
 import Services from "./pages/Services";
+import ServicioPostventa from "./pages/ServicioPostventa";
+import ProductosServicios from "./pages/ProductosServicios";
 import Contact from "./pages/Contact";
+import QuienesSomos from "./pages/QuienesSomos";
+import UbicacionesHorarios from "./pages/UbicacionesHorarios";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
@@ -30,6 +34,10 @@ const App = () => (
             <Route path="/sell" element={<Sell />} />
             <Route path="/financing" element={<Financing />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/servicio-postventa" element={<ServicioPostventa />} />
+            <Route path="/productos-y-servicios" element={<ProductosServicios />} />
+            <Route path="/quienes-somos" element={<QuienesSomos />} />
+            <Route path="/ubicaciones-y-horarios" element={<UbicacionesHorarios />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

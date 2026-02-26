@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -7,8 +7,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useLanguage } from "@/contexts/LanguageContext";
-import infinitCarsLogo from "@/assets/logo-INFINIT-black-background.png";
-import LanguageSelector from "./LanguageSelector";
+import mcmCarsLogo from "@/assets/mcm-cars-logo.png";
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState<string | null>(null);
@@ -23,9 +22,9 @@ const Footer = () => {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold">{t('legal.privacy_policy.section_2_1.title')}</h3>
           <div className="bg-muted/50 p-4 rounded-lg">
-            <p><strong>{t('legal.privacy_policy.section_2_1.company_name')}:</strong> INFINIT Cars</p>
+            <p><strong>{t('legal.privacy_policy.section_2_1.company_name')}:</strong> Montecarmelo Madrid Cars S.L.</p>
             <p><strong>{t('legal.privacy_policy.section_2_1.address')}:</strong> {address.full}</p>
-            <p><strong>{t('legal.privacy_policy.section_2_1.email')}:</strong> contact@infinit.com</p>
+            <p><strong>{t('legal.privacy_policy.section_2_1.email')}:</strong> info@mcmcars25.com</p>
             <p><strong>{t('legal.privacy_policy.section_2_1.phone')}:</strong> {getPhoneNumber()}</p>
           </div>
 
@@ -46,7 +45,7 @@ const Footer = () => {
           </ul>
 
           <h3 className="text-lg font-semibold">{t('legal.privacy_policy.section_2_4.title')}</h3>
-          <p>{t('legal.privacy_policy.section_2_4.content')} <strong>contact@infinit.com</strong></p>
+          <p>{t('legal.privacy_policy.section_2_4.content')}</p>
         </div>
       )
     },
@@ -57,10 +56,11 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">{t('legal.legal_notice.section_1_1.title')}</h3>
           <p>{t('legal.legal_notice.section_1_1.content')}</p>
           <div className="bg-muted/50 p-4 rounded-lg">
-            <p><strong>{t('legal.legal_notice.section_1_1.owner')}:</strong> INFINIT Cars</p>
+            <p><strong>{t('legal.legal_notice.section_1_1.owner')}:</strong> Montecarmelo Madrid Cars S.L.</p>
+            <p><strong>{t('legal.legal_notice.section_1_1.tax_id')}:</strong> B87461711</p>
             <p><strong>{t('legal.legal_notice.section_1_1.address')}:</strong> {address.full}</p>
             <p><strong>{t('legal.legal_notice.section_1_1.phone')}:</strong> {getPhoneNumber()}</p>
-            <p><strong>{t('legal.legal_notice.section_1_1.email')}:</strong> contact@infinit.com</p>
+            <p><strong>{t('legal.legal_notice.section_1_1.email')}:</strong> info@mcmcars25.com</p>
           </div>
 
           <h3 className="text-lg font-semibold">{t('legal.legal_notice.section_1_2.title')}</h3>
@@ -140,15 +140,14 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img
-                src={infinitCarsLogo}
-                alt="INFINIT Cars Logo"
+                src={mcmCarsLogo}
+                alt="MCM Cars Logo"
                 className="h-10 object-contain"
               />
             </div>
             <p className="text-white/70 mb-4">
               {t('footer.company_description')} {cityName}.
             </p>
-            <LanguageSelector />
           </div>
 
           {/* Contact */}
@@ -158,10 +157,6 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary" />
                 <span className="text-white/70">{getPhoneNumber()}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail size={16} className="text-primary" />
-                <span className="text-white/70">contact@infinit.com</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
@@ -206,7 +201,7 @@ const Footer = () => {
             <div className="mt-8">
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://www.facebook.com/infinitcars"
+                  href="https://es-es.facebook.com/MCMCars25/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary/80 hover:text-primary transition-colors"
@@ -215,7 +210,7 @@ const Footer = () => {
                   <Facebook size={24} />
                 </a>
                 <a
-                  href="https://www.instagram.com/infinit_cars"
+                  href="https://www.instagram.com/mcmcars25/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary/80 hover:text-primary transition-colors"
@@ -224,13 +219,26 @@ const Footer = () => {
                   <Instagram size={24} />
                 </a>
                 <a
-                  href="https://wa.me/1234567890?text=Hello%20INFINIT%20Cars"
+                  href="https://x.com/mcmcars25?lang=es"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary/80 hover:text-primary transition-colors"
-                  aria-label="WhatsApp"
+                  aria-label="X (Twitter)"
                 >
-                  <MessageCircle size={24} />
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@mcmcars25"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary/80 hover:text-primary transition-colors"
+                  aria-label="TikTok"
+                >
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.71a8.21 8.21 0 0 0 4.76 1.52V6.79a4.85 4.85 0 0 1-1-.1z" />
+                  </svg>
                 </a>
               </div>
             </div>

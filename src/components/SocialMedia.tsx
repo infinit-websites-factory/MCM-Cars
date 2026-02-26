@@ -1,4 +1,4 @@
-import aciertoCarsLogo from "@/assets/acierto-cars-logo.png";
+import mcmCarsLogo from "@/assets/mcm-cars-logo.png";
 
 const SocialMedia = () => {
   return (
@@ -13,79 +13,99 @@ const SocialMedia = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* TikTok Card */}
-          <a 
-            target="_blank" 
-            href="https://www.tiktok.com/@aciertocars?refer=creator_embed"
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {/* Facebook Card */}
+          <a
+            target="_blank"
+            href="https://es-es.facebook.com/MCMCars25/"
             className="block p-8 border border-border rounded-lg bg-background transition-all duration-300 hover:scale-105 shadow-lg"
           >
             <div className="text-center">
               <div className="flex items-center justify-center mb-4">
-                <img 
-                  src={aciertoCarsLogo} 
-                  alt="Acierto Cars Logo" 
-                  className="w-12 h-12 rounded-full"
+                <img
+                  src={mcmCarsLogo}
+                  alt="MCM Cars Logo"
+                  className="w-12 h-12 rounded-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">@aciertocars</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">MCM Cars</h3>
               <p className="text-muted-foreground mb-4">
-                Descubre nuestros vehículos premium y contenido exclusivo en TikTok
+                Descubre nuestras novedades y vehículos exclusivos en Facebook
               </p>
-              <div className="grid grid-cols-3 gap-4 text-center mb-4">
-                <div>
-                  <p className="text-lg font-bold text-foreground">590</p>
-                  <p className="text-xs text-muted-foreground">Siguiendo</p>
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-foreground">6.1K</p>
-                  <p className="text-xs text-muted-foreground">Seguidores</p>
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-foreground">24.8K</p>
-                  <p className="text-xs text-muted-foreground">Me gusta</p>
-                </div>
-              </div>
-              <div className="px-6 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white rounded-full text-sm font-medium">
-                Ver en TikTok
+              <div className="px-6 py-2 bg-blue-600 text-white rounded-full text-sm font-medium inline-block">
+                Ver en Facebook
               </div>
             </div>
           </a>
 
           {/* Instagram Card */}
-          <a 
-            target="_blank" 
-            href="https://www.instagram.com/aciertocars/"
+          <a
+            target="_blank"
+            href="https://www.instagram.com/mcmcars25/"
             className="block p-8 border border-border rounded-lg bg-background transition-all duration-300 hover:scale-105 shadow-lg"
           >
             <div className="text-center">
               <div className="flex items-center justify-center mb-4">
-                <img 
-                  src={aciertoCarsLogo} 
-                  alt="Acierto Cars Logo" 
-                  className="w-12 h-12 rounded-full"
+                <img
+                  src={mcmCarsLogo}
+                  alt="MCM Cars Logo"
+                  className="w-12 h-12 rounded-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">@aciertocars</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">@mcmcars25</h3>
               <p className="text-muted-foreground mb-4">
                 Fotos exclusivas de nuestros vehículos y eventos especiales
               </p>
-              <div className="grid grid-cols-3 gap-4 text-center mb-4">
-                <div>
-                  <p className="text-lg font-bold text-foreground">245</p>
-                  <p className="text-xs text-muted-foreground">Publicaciones</p>
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-foreground">3.2K</p>
-                  <p className="text-xs text-muted-foreground">Seguidores</p>
-                </div>
-                <div>
-                  <p className="text-lg font-bold text-foreground">892</p>
-                  <p className="text-xs text-muted-foreground">Siguiendo</p>
-                </div>
-              </div>
-              <div className="px-6 py-2 bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-500 text-white rounded-full text-sm font-medium">
+              <div className="px-6 py-2 bg-gradient-to-tr from-purple-500 via-pink-500 to-orange-500 text-white rounded-full text-sm font-medium inline-block">
                 Ver en Instagram
+              </div>
+            </div>
+          </a>
+
+          {/* X (Twitter) Card */}
+          <a
+            target="_blank"
+            href="https://x.com/mcmcars25?lang=es"
+            className="block p-8 border border-border rounded-lg bg-background transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-4">
+                <img
+                  src={mcmCarsLogo}
+                  alt="MCM Cars Logo"
+                  className="w-12 h-12 rounded-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">@mcmcars25</h3>
+              <p className="text-muted-foreground mb-4">
+                Últimas noticias y actualizaciones de MCM Cars
+              </p>
+              <div className="px-6 py-2 bg-black text-white rounded-full text-sm font-medium inline-block">
+                Ver en X
+              </div>
+            </div>
+          </a>
+
+          {/* TikTok Card */}
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@mcmcars25"
+            className="block p-8 border border-border rounded-lg bg-background transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-4">
+                <img
+                  src={mcmCarsLogo}
+                  alt="MCM Cars Logo"
+                  className="w-12 h-12 rounded-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">@mcmcars25</h3>
+              <p className="text-muted-foreground mb-4">
+                Vídeos exclusivos de nuestros vehículos en TikTok
+              </p>
+              <div className="px-6 py-2 bg-black text-white rounded-full text-sm font-medium inline-block">
+                Ver en TikTok
               </div>
             </div>
           </a>

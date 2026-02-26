@@ -30,12 +30,12 @@
     "placeholder": "Search by brand, model..."
   },
   "services": {
-    "title": "Our services at INFINIT Cars",
+    "title": "Our services at MCM Cars",
     "subtitle": "Commercialisation and import of custom premium vehicles, used and nearly new.",
     "vip": {
       "title": "VIP Service",
       "description": "We take care of everything: pickup, delivery, cleaning and any other management you need. You'll only have to worry about getting behind the wheel of your new vehicle.",
-      "additional_info": "Delivery throughout Great Britain."
+      "additional_info": "Delivery throughout Spain."
     },
     "warranty": {
       "title": "Plus Warranty (Extendable to 3 years)",
@@ -61,15 +61,15 @@
       },
       "schedule": {
         "question": "What is our schedule?",
-        "answer": "We are open all year round from Monday to Friday from 10:00 to 14:00 and from 16:00 to 19:00. On Saturdays we serve by appointment and on Sundays we are closed."
+        "answer": "We are open all year round from Monday to Friday from 09:30 to 14:30 and from 16:00 to 20:00. On Saturdays from 09:30 to 14:00 and on Sundays we are closed."
       },
       "quality": {
         "question": "What quality control do our vehicles undergo?",
-        "answer": "At INFINIT Cars, each vehicle undergoes a thorough quality control to guarantee its reliability and safety. This process includes: Complete Mechanical Inspection, Aesthetic and Functional Review, Road Performance Tests and Final Quality Control."
+        "answer": "At MCM Cars, each vehicle undergoes a thorough quality control to guarantee its reliability and safety. This process includes: Complete Mechanical Inspection, Aesthetic and Functional Review, Road Performance Tests and Final Quality Control."
       },
       "trade_in": {
         "question": "Do you accept vehicles as part payment?",
-        "answer": "Yes, at INFINIT Cars we accept vehicles as part payment. To decide whether to accept a vehicle or not, we carry out a detailed evaluation of the car offered in part payment, considering factors such as year, mileage, general condition and maintenance history, thus ensuring a fair and transparent agreement for both parties. We invite you to visit our dealership with your current vehicle for a no-obligation valuation and discuss the options available to you."
+        "answer": "Yes, at MCM Cars we accept vehicles as part payment. To decide whether to accept a vehicle or not, we carry out a detailed evaluation of the car offered in part payment, considering factors such as year, mileage, general condition and maintenance history, thus ensuring a fair and transparent agreement for both parties. We invite you to visit our dealership with your current vehicle for a no-obligation valuation and discuss the options available to you."
       }
     }
   },
@@ -86,8 +86,8 @@
     },
     "hours_title": "Hours",
     "hours": {
-      "weekday": "Mon-Fri: 10:00-14:00, 16:00-19:00",
-      "saturday": "Sat: By appointment",
+      "weekday": "Mon-Fri: 09:30-14:30, 16:00-20:00",
+      "saturday": "Sat: 09:30-14:00",
       "sunday": "Sun: Closed"
     },
     "legal": {
@@ -96,7 +96,7 @@
       "terms_conditions": "Terms and Conditions",
       "cookies": "Cookies"
     },
-    "copyright": "© 2026 INFINIT Cars. Powered by"
+    "copyright": "© 2026 MCM Cars. Powered by"
   },
   "contact_page": {
     "title": "Contact us",
@@ -145,8 +145,8 @@
       "address_title": "Address",
       "hours_title": "Opening hours",
       "hours": {
-        "weekday": "Monday to Friday: 10:00 - 14:00, 16:00 - 19:00",
-        "saturday": "Saturday: By appointment",
+        "weekday": "Monday to Friday: 09:30 - 14:30, 16:00 - 20:00",
+        "saturday": "Saturday: 09:30 - 14:00",
         "sunday": "Sunday: Closed"
       }
     }
@@ -198,36 +198,37 @@
   "reviews": {
     "title": "What our customers say about us",
     "google_review": "Google Review",
+    "reviews_label": "reviews",
     "testimonials": [
       {
-        "name": "María S.",
+        "name": "J. Párraga",
         "rating": 5,
-        "review": "Impeccable experience from start to finish. The vehicle we purchased was in perfect condition and the team was very professional throughout. The transparency in the process and attention to detail gave us complete confidence. Without a doubt, a very successful purchase."
+        "review": "Professionals from head to toe and offering the best treatment possible!! I would definitely repeat without a doubt for their kindness, transparency and efficient management! Now I just have to enjoy my new machine!! Thanks guys!!"
       },
       {
-        "name": "Carlos M.",
+        "name": "Eduardo Rodelgo Gallego",
         "rating": 5,
-        "review": "I bought a nearly new premium SUV and was delighted with the service. The entire process was smooth and clear, with detailed vehicle information. Financing was handled quickly and the price was very competitive. Totally recommended."
+        "review": "A very professional dealership! I went to trade in my vehicle and they showed me all kinds of vehicles with excellent professionalism, I appreciate their honesty about each vehicle and their patience. Highly recommended dealership both for the quality of vehicles and the treatment! Thank you so much for everything. I couldn't have made a better purchase with this super Golf GT!!"
       },
       {
-        "name": "María Jiménez",
+        "name": "jpj",
         "rating": 5,
-        "review": "I had been looking for the perfect car for months and finally found it thanks to INFINIT Cars. From the first contact, the treatment was exceptional. They advised me without pressure, patiently answered all my questions and helped me find exactly what I was looking for within my budget. The vehicle arrived in impeccable condition, better than expected. Financing was quick and transparent, with no surprises. Plus, the after-sales service is exceptional - they called to make sure everything was perfect. I will definitely return when I need to change cars and I recommend it to everyone. A purchasing experience that exceeded all my expectations."
+        "review": "I recently had the fortune of purchasing my new car at MCM Cars with full satisfaction. Everything perfect, simple process and professional treatment. The team has answered my questions advising me on car maintenance and resolving my doubts. In summary, I would without a doubt recommend MCM to anyone looking not only for a quality vehicle, but also great after-sales service."
       },
       {
-        "name": "Laura P.",
+        "name": "Alex Zamora Simo",
         "rating": 5,
-        "review": "We were looking for a high-end used car and found exactly what we needed. The advice was excellent, they explained all the options and helped us choose the ideal model for us. The condition of the vehicle exceeded our expectations."
+        "review": "Excellent treatment from the entire MCM Cars team, especially from Jose. I bought my car from 800 km away and they made me feel like I was right there. They convey a lot of trust and professionalism. Thanks for everything!"
       },
       {
-        "name": "David R.",
-        "rating": 4,
-        "review": "Professional purchasing process. They kept me informed at all times and the car arrived in good condition. Good experience overall."
+        "name": "Chechu",
+        "rating": 5,
+        "review": "They are the best!! Thanks guys! I couldn't be happier with my new 992!!! After 8 months with it the feelings are unbeatable! Porsche never disappoints, and MCM even less so!!! Third car with them and I hope it won't be the last!!"
       },
       {
-        "name": "Ana T.",
+        "name": "Alejandro De Orbe Sanchez",
         "rating": 5,
-        "review": "Very satisfied with my purchase. The team took the time to understand my needs and presented me with options that perfectly fit my budget. After-sales service has also been exceptional. A 5-star experience."
+        "review": "I bought my vehicle a week ago and everything has been perfect. Very pleasant treatment and always available. For my next purchase I will definitely go there again."
       }
     ]
   },
@@ -236,7 +237,7 @@
       "title": "Legal Notice",
       "section_1_1": {
         "title": "1.1 Identification of the Owner",
-        "content": "In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSICE), we inform you that this website infinit.com is owned by:",
+        "content": "In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSICE), we inform you that this website montecarmelomadridcars.com is owned by:",
         "owner": "Owner",
         "tax_id": "TAX ID",
         "address": "Registered office",
@@ -254,7 +255,7 @@
       },
       "section_1_3": {
         "title": "1.3 Intellectual and Industrial Property",
-        "content": "All content on the website (texts, images, logos, designs, etc.) is the property of INFINIT Cars or authorised third parties. Its reproduction, distribution or modification is prohibited without express authorisation."
+        "content": "All content on the website (texts, images, logos, designs, etc.) is the property of MCM Cars or authorised third parties. Its reproduction, distribution or modification is prohibited without express authorisation."
       },
       "section_1_4": {
         "title": "1.4 Liability",
@@ -476,7 +477,7 @@
   },
   "services_page": {
     "hero": {
-      "title": "Services at INFINIT Cars",
+      "title": "Services at MCM Cars",
       "subtitle": "We commercialise and import custom premium vehicles, used and nearly new in"
     },
     "main_services": {
@@ -489,7 +490,7 @@
         "description": "Your used vehicle with a 12-month warranty and up to 3 years. For all types of vehicles such as: sedans, coupes, convertibles, sports cars, SUVs, 4x4s, etc."
       },
       "shipping": {
-        "title": "Delivery throughout Great Britain",
+        "title": "Delivery throughout Spain",
         "description": "If you can't come to pick up the vehicle, don't worry. We take care of everything necessary for you to receive it at your doorstep."
       },
       "financing": {
@@ -503,7 +504,7 @@
       "button": "Get my vehicle valuation"
     },
     "alt_texts": {
-      "hero": "White BMW with INFINIT Cars logo",
+      "hero": "White BMW with MCM Cars logo",
       "sell": "Grey Porsche sports car on track - Premium vehicle valuation services"
     }
   },
@@ -705,7 +706,7 @@
       "success": "Reservation confirmed! We will contact you soon."
     },
     "appointment": {
-      "modal_title": "Book your appointment at INFINIT Cars",
+      "modal_title": "Book your appointment at MCM Cars",
       "date_label": "Appointment date",
       "time_label": "Time",
       "time_placeholder": "Select a time",
@@ -743,7 +744,7 @@
       "warranty": "The sale price includes 12 months warranty. (Extendable to 3 years)",
       "transfer_costs": "Transfer and management costs",
       "trade_in": "We accept vehicles as part payment.",
-      "delivery": "Delivery throughout the UK, please enquire about conditions."
+      "delivery": "Delivery throughout Spain, please enquire about conditions."
     },
     "specifications": {
       "title": "Specifications",

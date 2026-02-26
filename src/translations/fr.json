@@ -30,12 +30,12 @@
     "placeholder": "Rechercher par marque, modèle..."
   },
   "services": {
-    "title": "Nos services chez INFINIT Cars",
+    "title": "Nos services chez MCM Cars",
     "subtitle": "Commercialisation et importation de véhicules premium sur mesure, d'occasion, quasi-neufs et Km0.",
     "vip": {
       "title": "Service VIP",
       "description": "Nous nous occupons de tout : enlèvement, livraison, nettoyage et toute autre démarche dont vous avez besoin. Vous n'aurez qu'à vous soucier de prendre le volant de votre nouveau véhicule.",
-      "additional_info": "Livraison dans toute la France."
+      "additional_info": "Livraison dans toute l'Espagne."
     },
     "warranty": {
       "title": "Garantie Plus (Extensible à 3 ans)",
@@ -61,15 +61,15 @@
       },
       "schedule": {
         "question": "Quels sont nos horaires ?",
-        "answer": "Nous sommes ouverts toute l'année du lundi au vendredi de 10h00 à 14h00 et de 16h00 à 19h00. Le samedi, nous recevons sur rendez-vous et le dimanche nous sommes fermés."
+        "answer": "Nous sommes ouverts toute l'année du lundi au vendredi de 09h30 à 14h30 et de 16h00 à 20h00. Le samedi de 09h30 à 14h00 et le dimanche nous sommes fermés."
       },
       "quality": {
         "question": "Quel contrôle qualité subissent nos véhicules ?",
-        "answer": "Chez INFINIT Cars, chaque véhicule subit un contrôle qualité rigoureux pour garantir sa fiabilité et sa sécurité. Ce processus comprend : Inspection Mécanique Complète, Révision Esthétique et Fonctionnelle, Tests de Performance sur Route et Contrôle Qualité Final."
+        "answer": "Chez MCM Cars, chaque véhicule subit un contrôle qualité rigoureux pour garantir sa fiabilité et sa sécurité. Ce processus comprend : Inspection Mécanique Complète, Révision Esthétique et Fonctionnelle, Tests de Performance sur Route et Contrôle Qualité Final."
       },
       "trade_in": {
         "question": "Acceptez-vous les véhicules en reprise ?",
-        "answer": "Oui, chez INFINIT Cars nous acceptons les véhicules en reprise. Pour décider d'accepter ou non un véhicule, nous effectuons une évaluation détaillée de la voiture proposée en reprise, en tenant compte de facteurs tels que l'année, le kilométrage, l'état général et l'historique d'entretien, garantissant ainsi un accord juste et transparent pour les deux parties. Nous vous invitons à visiter notre concession avec votre véhicule actuel pour une évaluation sans engagement et discuter des options qui s'offrent à vous."
+        "answer": "Oui, chez MCM Cars nous acceptons les véhicules en reprise. Pour décider d'accepter ou non un véhicule, nous effectuons une évaluation détaillée de la voiture proposée en reprise, en tenant compte de facteurs tels que l'année, le kilométrage, l'état général et l'historique d'entretien, garantissant ainsi un accord juste et transparent pour les deux parties. Nous vous invitons à visiter notre concession avec votre véhicule actuel pour une évaluation sans engagement et discuter des options qui s'offrent à vous."
       }
     }
   },
@@ -86,8 +86,8 @@
     },
     "hours_title": "Horaires",
     "hours": {
-      "weekday": "Lun-Ven : 10h00-14h00, 16h00-19h00",
-      "saturday": "Sam : Sur rendez-vous",
+      "weekday": "Lun-Ven : 09h30-14h30, 16h00-20h00",
+      "saturday": "Sam : 09h30-14h00",
       "sunday": "Dim : Fermé"
     },
     "legal": {
@@ -96,7 +96,7 @@
       "terms_conditions": "Conditions générales",
       "cookies": "Cookies"
     },
-    "copyright": "© 2026 INFINIT Cars. Propulsé par"
+    "copyright": "© 2026 MCM Cars. Propulsé par"
   },
   "contact_page": {
     "title": "Contactez-nous",
@@ -145,8 +145,8 @@
       "address_title": "Adresse",
       "hours_title": "Heures d'ouverture",
       "hours": {
-        "weekday": "Lundi au vendredi : 10h00 - 14h00, 16h00 - 19h00",
-        "saturday": "Samedi : Sur rendez-vous",
+        "weekday": "Lundi au vendredi : 09h30 - 14h30, 16h00 - 20h00",
+        "saturday": "Samedi : 09h30 - 14h00",
         "sunday": "Dimanche : Fermé"
       }
     }
@@ -198,36 +198,37 @@
   "reviews": {
     "title": "Ce que nos clients disent de nous",
     "google_review": "Avis Google",
+    "reviews_label": "avis",
     "testimonials": [
       {
-        "name": "María S.",
+        "name": "J. Párraga",
         "rating": 5,
-        "review": "Expérience impeccable du début à la fin. Le véhicule que nous avons acheté était en parfait état et l'équipe a été très professionnelle tout au long. La transparence du processus et l'attention aux détails nous ont donné une confiance totale. Sans aucun doute, un achat très réussi."
+        "review": "Des professionnels de la tête aux pieds, offrant le meilleur traitement possible !! Je n'hésiterais pas à revenir pour leur amabilité, transparence et gestion efficace ! Il ne me reste plus qu'à profiter de ma nouvelle machine !! Merci les gars !!"
       },
       {
-        "name": "Carlos M.",
+        "name": "Eduardo Rodelgo Gallego",
         "rating": 5,
-        "review": "J'ai acheté un SUV premium quasi-neuf et j'ai été ravi du service. L'ensemble du processus a été fluide et clair, avec des informations détaillées sur le véhicule. Le financement a été géré rapidement et le prix était très compétitif. Totalement recommandé."
+        "review": "Un concessionnaire très professionnel ! Je suis allé échanger mon véhicule et ils m'ont montré toutes sortes de véhicules avec un excellent professionnalisme, je les remercie pour leur sincérité sur chaque véhicule et leur patience. Concessionnaire très recommandable tant pour la qualité des véhicules que pour le traitement ! Merci beaucoup pour tout. Je n'aurais pas pu faire un meilleur achat avec cette super Golf GT !!"
       },
       {
-        "name": "María Jiménez",
+        "name": "jpj",
         "rating": 5,
-        "review": "Je cherchais la voiture parfaite depuis des mois et je l'ai finalement trouvée grâce à INFINIT Cars. Dès le premier contact, le traitement a été exceptionnel. Ils m'ont conseillé sans pression, ont patiemment répondu à toutes mes questions et m'ont aidé à trouver exactement ce que je cherchais dans mon budget. Le véhicule est arrivé en parfait état, mieux que prévu. Le financement a été rapide et transparent, sans surprises. De plus, le service après-vente est exceptionnel - ils ont appelé pour s'assurer que tout était parfait. Je reviendrai certainement quand j'aurai besoin de changer de voiture et je le recommande à tout le monde. Une expérience d'achat qui a dépassé toutes mes attentes."
+        "review": "J'ai récemment eu la chance d'acheter ma nouvelle voiture chez MCM Cars avec une pleine satisfaction. Tout était parfait, processus simple et traitement professionnel. L'équipe a répondu à mes questions en me conseillant sur l'entretien de la voiture et en résolvant mes doutes. En résumé, je recommanderais sans hésiter MCM à quiconque cherche non seulement un véhicule de qualité, mais aussi un bon service après-vente."
       },
       {
-        "name": "Laura P.",
+        "name": "Alex Zamora Simo",
         "rating": 5,
-        "review": "Nous cherchions une voiture d'occasion haut de gamme et avons trouvé exactement ce dont nous avions besoin. Les conseils étaient excellents, ils ont expliqué toutes les options et nous ont aidés à choisir le modèle idéal pour nous. L'état du véhicule a dépassé nos attentes."
+        "review": "Excellent traitement de la part de toute l'équipe de MCM Cars, en particulier de José. J'ai acheté ma voiture à 800 km de distance et ils m'ont fait sentir comme si j'étais sur place. Ils transmettent beaucoup de confiance et de professionnalisme. Merci pour tout !"
       },
       {
-        "name": "David R.",
-        "rating": 4,
-        "review": "Processus d'achat professionnel. Ils m'ont tenu informé à tout moment et la voiture est arrivée en bon état. Bonne expérience en général."
+        "name": "Chechu",
+        "rating": 5,
+        "review": "Ce sont les meilleurs !! Merci les gars ! Je ne pourrais pas être plus content avec ma nouvelle 992 !!! Après 8 mois avec elle, les sensations sont imbattables ! Porsche ne déçoit jamais, et MCM encore moins !!! Troisième voiture avec eux et j'espère que ce ne sera pas la dernière !!"
       },
       {
-        "name": "Ana T.",
+        "name": "Alejandro De Orbe Sanchez",
         "rating": 5,
-        "review": "Très satisfaite de mon achat. L'équipe a pris le temps de comprendre mes besoins et m'a présenté des options qui correspondaient parfaitement à mon budget. Le service après-vente a également été exceptionnel. Une expérience 5 étoiles."
+        "review": "J'ai acheté mon véhicule il y a une semaine et tout est parfait. Traitement très agréable et toujours disponible. Pour mon prochain achat, j'irai certainement là-bas à nouveau."
       }
     ]
   },
@@ -236,7 +237,7 @@
       "title": "Mentions légales",
       "section_1_1": {
         "title": "1.1 Identification du propriétaire",
-        "content": "Conformément à la loi 34/2002 du 11 juillet sur les services de la société de l'information et le commerce électronique (LSSICE), nous vous informons que ce site Web infinit.com appartient à :",
+        "content": "Conformément à la loi 34/2002 du 11 juillet sur les services de la société de l'information et le commerce électronique (LSSICE), nous vous informons que ce site Web montecarmelomadridcars.com appartient à :",
         "owner": "Propriétaire",
         "tax_id": "Numéro d'identification fiscale",
         "address": "Siège social",
@@ -254,7 +255,7 @@
       },
       "section_1_3": {
         "title": "1.3 Propriété intellectuelle et industrielle",
-        "content": "Tout le contenu du site Web (textes, images, logos, designs, etc.) est la propriété d'INFINIT Cars ou de tiers autorisés. Sa reproduction, distribution ou modification est interdite sans autorisation expresse."
+        "content": "Tout le contenu du site Web (textes, images, logos, designs, etc.) est la propriété d'MCM Cars ou de tiers autorisés. Sa reproduction, distribution ou modification est interdite sans autorisation expresse."
       },
       "section_1_4": {
         "title": "1.4 Responsabilité",
@@ -529,7 +530,7 @@
   },
   "services_page": {
     "hero": {
-      "title": "Services chez INFINIT Cars",
+      "title": "Services chez MCM Cars",
       "subtitle": "Nous commercialisons et importons des véhicules premium sur mesure, d'occasion, quasi-neufs et Km0 à"
     },
     "main_services": {
@@ -542,7 +543,7 @@
         "description": "Votre véhicule d'occasion avec une garantie de 12 mois et jusqu'à 3 ans. Pour tous types de véhicules tels que : berlines, coupés, cabriolets, voitures de sport, SUV, 4x4, etc."
       },
       "shipping": {
-        "title": "Livraison dans toute la France",
+        "title": "Livraison dans toute l'Espagne",
         "description": "Si vous ne pouvez pas venir récupérer le véhicule, ne vous inquiétez pas. Nous nous occupons de tout le nécessaire pour que vous le receviez à votre porte."
       },
       "financing": {
@@ -556,7 +557,7 @@
       "button": "Obtenir l'estimation de mon véhicule"
     },
     "alt_texts": {
-      "hero": "BMW blanche avec le logo INFINIT Cars",
+      "hero": "BMW blanche avec le logo MCM Cars",
       "sell": "Porsche grise de sport sur circuit - Services d'estimation de véhicules premium"
     }
   },
@@ -705,7 +706,7 @@
       "success": "Réservation confirmée ! Nous vous contacterons bientôt."
     },
     "appointment": {
-      "modal_title": "Réservez votre rendez-vous chez INFINIT Cars",
+      "modal_title": "Réservez votre rendez-vous chez MCM Cars",
       "date_label": "Date du rendez-vous",
       "time_label": "Heure",
       "time_placeholder": "Sélectionnez une heure",
@@ -743,7 +744,7 @@
       "warranty": "Le prix de vente comprend 12 mois de garantie. (Extensible à 3 ans)",
       "transfer_costs": "Frais de transfert et de gestion",
       "trade_in": "Nous acceptons les véhicules en reprise.",
-      "delivery": "Livraison dans toute la France, renseignez-vous sur les conditions."
+      "delivery": "Livraison dans toute l'Espagne, renseignez-vous sur les conditions."
     },
     "specifications": {
       "title": "Spécifications",

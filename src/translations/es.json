@@ -12,7 +12,7 @@
   },
   "header": {
     "home": "Inicio",
-    "vehicles": "Vehículos de ocasión",
+    "vehicles": "Vehículos Exclusivos",
     "sell_your_car": "Vende tu coche",
     "financing": "Financiación",
     "services": "Servicios",
@@ -22,16 +22,16 @@
     "phone": "Teléfono"
   },
   "hero": {
-    "title": "Vehículos de Alta Gama",
+    "title": "Especialistas en Vehículos Exclusivos",
     "subtitle": "en",
-    "description": "Somos referentes en la comercialización e importación de vehículos premium de ocasión, seminuevos y Km0."
+    "description": "MCM Cars, especialistas en coches exclusivos en Madrid. Disponemos de una flota de más de 125 vehículos, de las marcas BMW, AUDI, Mercedes-Benz, Porsche, MINI, Land Rover, Ferrari y Lamborghini."
   },
   "search": {
     "placeholder": "Buscar por marca, modelo..."
   },
   "services": {
-    "title": "Nuestros servicios en INFINIT Cars",
-    "subtitle": "Comercialización e importación de vehículos premium a la carta, de ocasión, seminuevos y Km0.",
+    "title": "Nuestros servicios en MCM Cars",
+    "subtitle": "Nuestro objetivo es que te sientas en buenas manos antes y después de elegir un vehículo.",
     "vip": {
       "title": "Servicio VIP",
       "description": "Nos encargamos de todo: recogida, entrega, limpieza y otras gestiones que necesites. Solo tendrás que preocuparte por ponerte al volante de tu nuevo vehículo.",
@@ -61,20 +61,20 @@
       },
       "schedule": {
         "question": "¿Cuál es nuestro horario?",
-        "answer": "Estamos abiertos todo el año de Lunes a Viernes de 10:00 a 14:00 y de 16:00 a 19:00. Los Sábados atendemos con cita previa y los Domingos permanecemos cerrados."
+        "answer": "Estamos abiertos todo el año de Lunes a Viernes de 09:30 a 14:30 y de 16:00 a 20:00. Los Sábados de 09:30 a 14:00 y los Domingos permanecemos cerrados."
       },
       "quality": {
         "question": "¿Qué control de calidad pasan nuestros vehículos?",
-        "answer": "En INFINIT Cars, cada vehículo es sometido a un exhaustivo control de calidad para garantizar su fiabilidad y seguridad. Este proceso incluye: Inspección Mecánica Completa, Revisión Estética y Funcional, Pruebas de Rendimiento en Carretera y Control de Calidad Final."
+        "answer": "En MCM Cars, cada vehículo es sometido a un exhaustivo control de calidad para garantizar su fiabilidad y seguridad. Este proceso incluye: Inspección Mecánica Completa, Revisión Estética y Funcional, Pruebas de Rendimiento en Carretera y Control de Calidad Final."
       },
       "trade_in": {
         "question": "¿Aceptáis vehículos como parte de pago?",
-        "answer": "Sí, en INFINIT Cars aceptamos vehículos como parte de pago. Para decidir si aceptamos un vehículo o no, realizamos una evaluación detallada del coche que se ofrece en parte de pago, considerando factores como el año, el kilometraje, el estado general y el historial de mantenimiento, asegurando así un acuerdo justo y transparente para ambas partes. Te invitamos a visitar nuestro concesionario con tu vehículo actual para una valoración sin compromiso y discutir las opciones disponibles para ti."
+        "answer": "Sí, en MCM Cars aceptamos vehículos como parte de pago. Para decidir si aceptamos un vehículo o no, realizamos una evaluación detallada del coche que se ofrece en parte de pago, considerando factores como el año, el kilometraje, el estado general y el historial de mantenimiento, asegurando así un acuerdo justo y transparente para ambas partes. Te invitamos a visitar nuestro concesionario con tu vehículo actual para una valoración sin compromiso y discutir las opciones disponibles para ti."
       }
     }
   },
   "footer": {
-    "company_description": "Tu concesionario de confianza para vehículos premium de ocasión en",
+    "company_description": "Especialistas en vehículos exclusivos en",
     "contact_title": "Contacto",
     "services_title": "Servicios",
     "services_list": {
@@ -86,8 +86,8 @@
     },
     "hours_title": "Horarios",
     "hours": {
-      "weekday": "Lun-Vie: 10:00-14:00, 16:00-19:00",
-      "saturday": "Sáb: Con cita previa",
+      "weekday": "Lun-Vie: 09:30-14:30, 16:00-20:00",
+      "saturday": "Sáb: 09:30-14:00",
       "sunday": "Dom: Cerrado"
     },
     "legal": {
@@ -96,7 +96,7 @@
       "terms_conditions": "Términos y Condiciones",
       "cookies": "Cookies"
     },
-    "copyright": "© 2026 INFINIT Cars. Powered by"
+    "copyright": "© 2026 MCM Cars. Powered by"
   },
   "contact_page": {
     "title": "Contacta con nosotros",
@@ -145,15 +145,15 @@
       "address_title": "Dirección",
       "hours_title": "Horarios de atención",
       "hours": {
-        "weekday": "Lunes a Viernes: 10:00 - 14:00, 16:00 - 19:00",
-        "saturday": "Sábado: Con cita previa",
+        "weekday": "Lunes a Viernes: 09:30 - 14:30, 16:00 - 20:00",
+        "saturday": "Sábado: 09:30 - 14:00",
         "sunday": "Domingo: Cerrado"
       }
     }
   },
   "vehicle_gallery": {
-    "title": "¡Descubre nuestros vehículos!",
-    "subtitle": "El mejor precio y la mejor calidad van de la mano.",
+    "title": "Nuestros destacados",
+    "subtitle": "Nuestra experiencia y prestigio nos avalan, más de 2000 coches vendidos.",
     "view_cars": "Ver coches",
     "error_loading": "No se pudieron cargar los vehículos en este momento. Por favor, inténtalo de nuevo más tarde."
   },
@@ -198,36 +198,37 @@
   "reviews": {
     "title": "Lo que dicen nuestros clientes de nosotros",
     "google_review": "Reseña de Google",
+    "reviews_label": "reseñas",
     "testimonials": [
       {
-        "name": "María S.",
+        "name": "J. Párraga",
         "rating": 5,
-        "review": "Experiencia impecable de principio a fin. El vehículo que adquirimos estaba en perfectas condiciones y el equipo fue muy profesional en todo momento. La transparencia en el proceso y la atención al detalle nos dieron total confianza. Sin duda, una compra muy acertada."
+        "review": "Profesionales de los pies a la cabeza y ofreciendo el mejor trato posible!! Volvería a repetir sin duda por su amabilidad, transparencia y gestión eficiente! Ahora solo me queda disfrutar de mi nueva máquina!! Gracias chicos!!"
       },
       {
-        "name": "Carlos M.",
+        "name": "Eduardo Rodelgo Gallego",
         "rating": 5,
-        "review": "Compré un SUV premium seminuevo y quedé encantado con el servicio. Todo el proceso fue ágil y claro, con información detallada del vehículo. La financiación se gestionó rápidamente y el precio fue muy competitivo. Totalmente recomendable."
+        "review": "Un concesionario muy profesional! Fui a cambiar mi vehículo y me mostraron todo tipo de vehículos y con una profesionalidad excelente, agradecer su sinceridad en cada uno de los vehículos y su paciencia. Concesionario muy recomendable como por la calidad de vehículos como por el trato! Mil gracias por todo. No pude hacer mejor compra con este súper golf GT!!"
       },
       {
-        "name": "María Jiménez",
+        "name": "jpj",
         "rating": 5,
-        "review": "Llevaba meses buscando el coche perfecto y finalmente lo encontré gracias a INFINIT Cars. Desde el primer contacto, el trato fue excepcional. Me asesoraron sin presiones, respondieron todas mis dudas con paciencia y me ayudaron a encontrar exactamente lo que buscaba dentro de mi presupuesto. El vehículo llegó en condiciones impecables, mejor de lo esperado. La financiación fue rápida y transparente, sin sorpresas. Además, el servicio post-venta es excepcional - me llamaron para asegurarse de que todo estaba perfecto. Sin duda, volveré cuando necesite cambiar de coche y lo recomiendo a todo el mundo. Una experiencia de compra que superó todas mis expectativas."
+        "review": "Hace poco tuve la fortuna de adquirir mi nuevo coche en MCM Cars con plena satisfacción. Todo perfecto, proceso sencillo y trato profesional. El equipo ha resuelto mis preguntas asesorándome sobre el mantenimiento del coche o sobre las dudas. En resumen, sin duda, recomendaría a MCM a cualquiera que busque no solo un vehículo de calidad, sino también una buena postventa."
       },
       {
-        "name": "Laura P.",
+        "name": "Alex Zamora Simo",
         "rating": 5,
-        "review": "Buscábamos un coche de alta gama de ocasión y encontramos exactamente lo que necesitábamos. El asesoramiento fue excelente, nos explicaron todas las opciones y nos ayudaron a elegir el modelo ideal para nosotros. El estado del vehículo superó nuestras expectativas."
+        "review": "Excelente trato por parte de todo el equipo de MCM Cars, especialmente de José. Compré mi coche a 800 km de distancia y me hicieron sentir como si estuviera allí. Transmiten mucha confianza y profesionalidad. ¡Gracias por todo!"
       },
       {
-        "name": "David R.",
-        "rating": 4,
-        "review": "Proceso de compra profesional. Me mantuvieron informado en todo momento y el coche llegó en buenas condiciones. Buena experiencia en general."
+        "name": "Chechu",
+        "rating": 5,
+        "review": "Son los mejores!! Gracias chicos! No puedo estar más contento con mi nuevo 992!!! Después de 8 meses con él las sensaciones son inmejorables! Porsche nunca defrauda, y MCM menos aún!!! Tercer coche con ellos y espero que no sea el último!!"
       },
       {
-        "name": "Ana T.",
+        "name": "Alejandro De Orbe Sanchez",
         "rating": 5,
-        "review": "Muy satisfecha con mi compra. El equipo se tomó el tiempo de entender mis necesidades y me presentaron opciones que se ajustaban perfectamente a mi presupuesto. La atención post-venta también ha sido excepcional. Una experiencia 5 estrellas."
+        "review": "Compré mi vehículo hace una semana y todo perfecto. Trato muy agradable y siempre a disposición. El siguiente que me compre iré allí seguro."
       }
     ]
   },
@@ -236,7 +237,7 @@
       "title": "Aviso Legal",
       "section_1_1": {
         "title": "1.1 Identificación del Titular",
-        "content": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se informa que el presente sitio web infinit.com es propiedad de:",
+        "content": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se informa que el presente sitio web montecarmelomadridcars.com es propiedad de:",
         "owner": "Titular",
         "tax_id": "CIF/NIF",
         "address": "Domicilio social",
@@ -254,7 +255,7 @@
       },
       "section_1_3": {
         "title": "1.3 Propiedad Intelectual e Industrial",
-        "content": "Todos los contenidos del sitio web (textos, imágenes, logotipos, diseños, etc.) son propiedad de INFINIT Cars o de terceros autorizados. Queda prohibida su reproducción, distribución o modificación sin autorización expresa."
+        "content": "Todos los contenidos del sitio web (textos, imágenes, logotipos, diseños, etc.) son propiedad de MCM Cars o de terceros autorizados. Queda prohibida su reproducción, distribución o modificación sin autorización expresa."
       },
       "section_1_4": {
         "title": "1.4 Responsabilidad",
@@ -409,8 +410,8 @@
   },
   "services_page": {
     "hero": {
-      "title": "Servicios en INFINIT Cars",
-      "subtitle": "Comercializamos e importamos vehículos premium a la carta, de ocasión, seminuevos y de KM 0 en"
+      "title": "Servicios en MCM Cars",
+      "subtitle": "En MCM Cars, entregamos los vehículos con todas las garantías. Contamos con una red de talleres en"
     },
     "main_services": {
       "vip": {
@@ -436,7 +437,7 @@
       "button": "Tasar mi vehículo"
     },
     "alt_texts": {
-      "hero": "BMW blanco con logo de INFINIT Cars",
+      "hero": "Vehículo exclusivo con logo de MCM Cars",
       "sell": "Porsche deportivo gris en pista - Servicios de tasación de vehículos premium"
     }
   },
@@ -706,7 +707,7 @@
       "success": "¡Reserva confirmada! Nos pondremos en contacto contigo pronto."
     },
     "appointment": {
-      "modal_title": "Reserva tu cita en INFINIT Cars",
+      "modal_title": "Reserva tu cita en MCM Cars",
       "date_label": "Fecha de la cita",
       "time_label": "Hora",
       "time_placeholder": "Selecciona una hora",

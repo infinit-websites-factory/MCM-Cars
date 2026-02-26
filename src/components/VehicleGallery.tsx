@@ -6,6 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import heroBannerBis from "@/assets/hero-banner-bis.png";
 
 const VehicleGallery = () => {
   const { t } = useLanguage();
@@ -61,24 +62,35 @@ const VehicleGallery = () => {
   }
 
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
+    <section
+      className="relative py-16"
+      style={{
+        backgroundImage: `url(${heroBannerBis})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/70" />
+
+      <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">{t('vehicle_gallery.title')}</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-white">{t('vehicle_gallery.title')}</h2>
+          <p className="text-xl text-white/70 max-w-2xl mx-auto">
             {t('vehicle_gallery.subtitle')}
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {isLoading ? (
             Array.from({ length: 4 }).map((_, index) => (
               <div key={index} className="space-y-3">
-                <Skeleton className="h-48 w-full rounded-lg" />
+                <Skeleton className="h-48 w-full rounded-lg bg-white/10" />
                 <div className="space-y-2">
-                  <Skeleton className="h-4 w-3/4" />
-                  <Skeleton className="h-4 w-1/2" />
-                  <Skeleton className="h-8 w-full" />
+                  <Skeleton className="h-4 w-3/4 bg-white/10" />
+                  <Skeleton className="h-4 w-1/2 bg-white/10" />
+                  <Skeleton className="h-8 w-full bg-white/10" />
                 </div>
               </div>
             ))
@@ -88,12 +100,12 @@ const VehicleGallery = () => {
             ))
           )}
         </div>
-        
+
         {!isLoading && vehicles.length > 4 && (
           <div className="text-center mt-8">
             <a
               href="/stock"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black hover:bg-white/90 h-10 px-6 py-2"
             >
               {t('vehicle_gallery.view_cars')}
             </a>

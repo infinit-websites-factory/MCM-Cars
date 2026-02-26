@@ -86,8 +86,9 @@ const Sell = () => {
     "UMM", "Volkswagen", "Volvo"
   ];
 
-  // Generate years from 2025 down to 2000
-  const years = Array.from({ length: 26 }, (_, i) => (2025 - i).toString());
+  // Generate years from current year down to 2000
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: currentYear - 2000 + 1 }, (_, i) => (currentYear - i).toString());
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -818,9 +819,8 @@ Kilometraje: ${formData.kilometraje} km`;
             <div className="space-y-4">
               <h3 className="text-lg font-semibold">{t('legal.privacy_policy.section_2_1.title')}</h3>
               <div className="bg-muted/50 p-4 rounded-lg">
-                <p><strong>{t('legal.privacy_policy.section_2_1.company_name')}:</strong> INFINIT Cars</p>
+                <p><strong>{t('legal.privacy_policy.section_2_1.company_name')}:</strong> MCM Cars</p>
                 <p><strong>{t('legal.privacy_policy.section_2_1.address')}:</strong> {address.full}</p>
-                <p><strong>{t('legal.privacy_policy.section_2_1.email')}:</strong> contact@infinit.com</p>
                 <p><strong>{t('legal.privacy_policy.section_2_1.phone')}:</strong> {getPhoneNumber()}</p>
               </div>
 
@@ -841,7 +841,7 @@ Kilometraje: ${formData.kilometraje} km`;
               </ul>
 
               <h3 className="text-lg font-semibold">{t('legal.privacy_policy.section_2_4.title')}</h3>
-              <p>{t('legal.privacy_policy.section_2_4.content')} <strong>contact@infinit.com</strong></p>
+              <p>{t('legal.privacy_policy.section_2_4.content')} <strong>MCM Cars</strong></p>
             </div>
           </div>
         </DialogContent>

@@ -67,7 +67,7 @@ export interface Vehicle {
 }
 
 // Default fallback profile ID
-const DEFAULT_PROFILE_ID = 'aba6af2e-18f8-4757-a892-c589d9b965ca';
+const DEFAULT_PROFILE_ID = '0069c477-17e4-476e-a485-1367deafe125';
 
 // UUID v4 regex pattern
 const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -106,7 +106,7 @@ const getProfileIdFromSubdomain = (): string => {
 export const PROFILE_ID = getProfileIdFromSubdomain();
 
 // API endpoints using the dynamic profile ID
-const API_BASE_URL = 'https://multipost-public.alx.test-cluster.alx.tech';
+const API_BASE_URL = 'https://multipost-public.app.infinit.cc';
 const API_URL = `${API_BASE_URL}/api/public/inventory/profiles/${PROFILE_ID}`;
 export const CONTACT_FORM_API_URL = `${API_BASE_URL}/api/interactions/contact-form`;
 

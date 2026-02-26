@@ -17,10 +17,10 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 9%;
 
-    /* INFINIT Cars brand color - Bright Yellow #FFDD32 */
-    --primary: 50 100% 60%;
+    /* MCM Cars brand color - Light Blue-Gray #eef0f6 */
+    --primary: 225 31% 95%;
     --primary-foreground: 0 0% 9%;
-    --primary-hover: 50 100% 55%;
+    --primary-hover: 225 31% 90%;
 
     --secondary: 0 0% 93%;
     --secondary-foreground: 0 0% 9%;
@@ -28,7 +28,7 @@ All colors MUST be HSL.
     --muted: 0 0% 93%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 50 100% 60%;
+    --accent: 225 31% 95%;
     --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84% 60%;
@@ -36,15 +36,15 @@ All colors MUST be HSL.
 
     --border: 0 0% 91%;
     --input: 0 0% 91%;
-    --ring: 50 100% 60%;
+    --ring: 225 31% 95%;
 
     /* Navigation colors */
     --nav-background: 0 0% 9%;
     --nav-foreground: 0 0% 98%;
     --nav-muted: 0 0% 70%;
 
-    /* Premium gradients with new brand color */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(50 100% 70%));
+    /* Premium gradients with MCM Cars brand color */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(225 31% 98%));
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
     
     /* Shadows */
@@ -80,9 +80,9 @@ All colors MUST be HSL.
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 50 100% 60%;
+    --primary: 225 31% 95%;
     --primary-foreground: 0 0% 9%;
-    --primary-hover: 50 100% 65%;
+    --primary-hover: 225 31% 98%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -90,7 +90,7 @@ All colors MUST be HSL.
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 50 100% 60%;
+    --accent: 225 31% 95%;
     --accent-foreground: 0 0% 9%;
 
     --destructive: 0 75% 55%;
@@ -98,7 +98,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 50 100% 60%;
+    --ring: 225 31% 95%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
